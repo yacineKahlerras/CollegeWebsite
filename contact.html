@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+    />
+    <title>Uni Website</title>
+  </head>
+  <body>
+    <!-- header section -->
+    <section class="sub-headerSection">
+      <nav>
+        <!-- logo -->
+        <a href="index.html">
+          <img src="images/logo.png" alt="logo" />
+        </a>
+        <!-- navigation elements -->
+        <div class="nav-links" id="navLinks">
+          <!-- close menu button -->
+          <i class="bi bi-x-circle-fill" onclick="HideMenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <!-- show menu button -->
+        <i class="bi bi-list" onclick="ShowMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+    <!-- location -->
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4780.383785618679!2d7.760640607923937!3d36.902563857499146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12f007bd718d66bf%3A0xe5b6d61c07209d04!2sSheraton%20Annaba%20Hotel!5e0!3m2!1sen!2sdz!4v1652021483045!5m2!1sen!2sdz"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <!-- contact form -->
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="bi bi-house-fill"></i>
+            <span>
+              <h5>annaba el 7alaba 23</h5>
+              <p>Algeria, annaba, centre ville</p>
+            </span>
+          </div>
+          <div>
+            <i class="bi bi-telephone-fill"></i>
+            <span>
+              <h5>0796805105</h5>
+              <p>everyday 24/7 babyyyy</p>
+            </span>
+          </div>
+          <div>
+            <i class="bi bi-envelope-fill"></i>
+            <span>
+              <h5>sheraton@gmail.com</h5>
+              <p>Emailus bitch.</p>
+            </span>
+          </div>
+        </div>
+        <dib class="contact-col">
+          <form action="">
+            <input type="text" placeholder="Enter Your Name" required />
+            <input type="email" placeholder="Enter email adress" required />
+            <input type="text" placeholder="Enter Subject" required />
+            <textarea rows="8" placeholder="Message" required></textarea>
+            <button type="submit" class="visit-us-btn red-btn">
+              Message Us
+            </button>
+          </form>
+        </dib>
+      </div>
+    </section>
+    <!-- footer -->
+    <section class="footer-section">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ea
+        fugiat veniam ipsam, <br />in dolorum exercitationem ex consectetur
+        minus quidem ab reprehenderit? Aliquid esse <br />
+        tenetur , dolor facere temporibus iste quidem.
+      </p>
+      <div class="social-media-icons">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-linkedin"></i>
+        <i class="bi bi-twitter"></i>
+      </div>
+    </section>
+    <!-- some java script -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function ShowMenu() {
+        navLinks.style.right = "0";
+      }
+      function HideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
