@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,37 +19,31 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
     />
-    <title>Uni Website</title>
+    <title>Algerian College</title>
   </head>
   <body>
-    <!-- header section -->
-    <section class="sub-headerSection">
+    <!-- HEADER SECTION -->
+    <section class="sub-headerSection" id="headerSection">
       <nav>
-        <!-- logo -->
-        <a href="index.html">
-          <img src="images/logo.png" alt="logo" />
-        </a>
-        <!-- navigation elements -->
-        <div class="nav-links" id="navLinks">
-          <!-- close menu button -->
+        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        <div class="navLinks" id="navLinks">
           <i class="bi bi-x-circle-fill" onclick="HideMenu()"></i>
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">HOME</a></li>
             <li><a href="about.html">ABOUT</a></li>
-            <li><a href="course.html">COURSE</a></li>
             <li><a href="blog.html">BLOG</a></li>
             <li><a href="contact.html">CONTACT</a></li>
           </ul>
         </div>
-        <!-- show menu button -->
         <i class="bi bi-list" onclick="ShowMenu()"></i>
       </nav>
       <h1>Our certificate and Online Programs for 2021</h1>
     </section>
-    <!-- blog -->
-    <section class="blog-content">
+
+    <!-- BLOG -->
+    <section class="blogSection">
       <div class="row">
-        <div class="blog-left">
+        <div class="blogLeftSection">
           <img src="images/certificate.jpg" />
           <h2>Our Certificate and online programs 2022</h2>
           <p>
@@ -77,20 +72,20 @@
             eos beatae sit ut rerum ipsam nesciunt necessitatibus odit nostrum
             aliquam.
           </p>
-          <div class="comment-box">
+          <div class="commentBox">
             <h3>Leave a comment</h3>
-            <form class="comment-form">
+            <form class="commentForm">
               <input type="text" placeholder="Enter Name" />
               <input type="email" placeholder="Enter Email" />
-              <textarea rows="5" placeholder="Your comment"> </textarea>
-              <button class="visit-us-btn red-btn" type="submit">
+              <textarea rows="5" placeholder="Your comment"></textarea>
+              <button class="contactUsBtn redBtn" type="submit">
                 Post Comment
               </button>
             </form>
           </div>
         </div>
-        <div class="blog-right">
-          <h3>Post Categories</h3>
+        <div class="blogRightSection">
+          <h2>Post Categories</h2>
           <div>
             <span>Business Analytics</span>
             <span>21</span>
@@ -110,25 +105,26 @@
         </div>
       </div>
     </section>
-    <!-- footer -->
-    <section class="footer-section">
-      <h4>About Us</h4>
+    <!-- FOOTER -->
+    <section class="footer">
+      <h1>About Us</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ea
-        fugiat veniam ipsam, <br />in dolorum exercitationem ex consectetur
-        minus quidem ab reprehenderit? Aliquid esse <br />
-        tenetur , dolor facere temporibus iste quidem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Eligendi,
+        error fugit commodi, obcaecati eaque <br />officia similique, reiciendis
+        itaque possimus <br />harum rerum blanditiis nisi. Cum corporis enim
+        possimus accusamus voluptas sint?
       </p>
-      <div class="social-media-icons">
+      <div class="socialMediaIcons">
         <i class="bi bi-facebook"></i>
         <i class="bi bi-instagram"></i>
         <i class="bi bi-linkedin"></i>
         <i class="bi bi-twitter"></i>
       </div>
     </section>
-    <!-- some java script -->
+
     <script>
-      var navLinks = document.getElementById("navLinks");
+      // nav bar hide and show
+      let navLinks = document.getElementById("navLinks");
       function ShowMenu() {
         navLinks.style.right = "0";
       }

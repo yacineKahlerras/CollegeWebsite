@@ -10,6 +10,7 @@ html,body{
 }
 /* 
 
+
 header section
 
 
@@ -76,6 +77,7 @@ nav .bi{
     display: none;
   }
 /** 
+
 
 basic info section
 
@@ -145,7 +147,9 @@ basic info section
 }
 /* 
 
+
 COURSES
+
 
 */
 .course{
@@ -154,12 +158,12 @@ COURSES
     text-align: center;
     padding-top: 100px;
 }
-h1{
+.course h1{
     font-size: 36px;
     font-weight: 600;
 }
 p{
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
@@ -178,7 +182,7 @@ p{
     padding: 20px 12px;
     transition: .5s;
 }
-h2{
+.courseColumn h2{
     text-align: center;
     font-weight: 900;
     margin: 10px 0;
@@ -190,7 +194,9 @@ h2{
 }
 /* 
 
+
 campus
+
 
 */
 .campus{
@@ -246,7 +252,9 @@ campus
 }
 /* 
 
+
 facilities
+
 
 */
 .facilities{
@@ -276,7 +284,9 @@ facilities
 }
 /* 
 
+
 testimonials
+
 
 */
 .testimonials-section{
@@ -319,7 +329,9 @@ testimonials
   }
   /* 
   
+
   call to action
+
   
   */
   .callToAction{
@@ -344,7 +356,9 @@ testimonials
   }
   /* 
   
+
   footer
+
   
   */
   .footer{
@@ -362,4 +376,183 @@ testimonials
       margin: 0 13px;
       cursor: pointer;
       padding: 18px 0;
+  }
+  /* 
+  
+
+  about us page
+  
+
+  */
+  .sub-headerSection{
+      height: 50vh;
+      width: 100%;
+      background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4, 9, 30, 0.089)),
+  url(images/background.jpg);
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+  }
+  .sub-headerSection h1{
+      margin-top: 100px;
+  }
+  .aboutUs{
+      width: 80%;
+      margin: auto;
+      padding-top: 80px;
+      padding-bottom: 50px;
+  }
+  .aboutUsColumn{
+      flex-basis: 48%;
+      padding: 30px 2px;
+      text-align: left;
+  }
+  .aboutUsColumn img{
+      width: 100%;
+      text-align: left;
+  }
+  .aboutUsColumn h2{
+      padding-top: 0;
+  }
+  .aboutUsColumn p{
+      padding: 15px 0 25px;
+      color: rgb(0, 0, 0);
+      text-align: left;
+  }
+  .redBtn{
+      border:  1px solid #f44336;
+      background: transparent;
+      color: #f44336;
+  }
+  .redBtn:hover{
+      color: #fff;
+  }
+  /* 
+  
+
+  blog page
+
+  
+  */
+  .blogSection{
+      width: 80%;
+      margin: auto;
+      padding: 60px 0;
+  }
+  .blogLeftSection{
+      flex-basis: 65%;
+  }
+  .blogLeftSection img{
+      width: 100%;
+  }
+  .blogLeftSection h2{
+      color: #222;
+      font-weight: 600;
+      margin: 30px 0;
+  }
+  .blogLeftSection p{
+      color: #999;
+      padding: 0;
+  }
+  .blogRightSection{
+    flex-basis: 32%;
+  }
+  .blogRightSection h2{
+      background-color: #f44336;
+      border-radius: 5px;
+      color: #fff;
+      padding: 7px 0;
+      font-size: 16px;
+      margin-bottom: 20px;
+      text-align: center;
+  }
+  .blogRightSection div{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #555;
+      padding: 8px;
+  }
+  .commentBox{
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      margin: 50px 0;
+      padding: 10px 20px;
+  }
+  .commentBox h3{
+      text-align: left;
+  }
+  .commentForm input, .commentForm textarea{
+      width: 100%;
+      padding: 10px;
+      margin: 15px 0;
+      border: none;
+      border-radius: 20px;
+      outline: none;
+      background-color: #f0f0f0;
+  }
+  .commentForm button{
+      margin: 10px 0;
+  }
+  @media(max-width: 700px){
+      .sub-headerSection h1{
+        font-size: 24px;
+      }
+  }
+  /* 
+  
+  
+  contact us page
+  
+
+  */
+  .location{
+      width: 80%;
+      margin: auto;
+      padding: 80px 0;
+  }
+  .location iframe{
+      width: 100%;
+      border-radius: 30px;
+  }
+  .contactUs{
+      width: 80%;
+      margin: auto;
+  }
+  .contactColumn{
+      flex-basis: 48%;
+      margin-bottom: 30px;
+  }
+  .contactColumn div{
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+  }
+  .contactColumn div .bi{
+      font-size: 28px;
+      color: #f44336;
+      margin: 10px;
+      margin-right: 30px;
+  }
+  .contactColumn p{
+      padding: 0;
+  }
+  .contactColumn h5{
+      font-size: 20px;
+      margin-bottom: 5px;
+      color: #555;
+      font-weight: 400;
+  }
+  .contactColumn input, .contactColumn textarea{
+      width: 100%;
+      padding: 10px;
+      margin: 15px 0;
+      border: none;
+      border-radius: 20px;
+      outline: none;
+      background: #f0f0f0;
+  }
+  .contactColumn form{
+      margin-top: -20px;
   }
