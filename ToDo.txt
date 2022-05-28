@@ -1,0 +1,5 @@
+WHAT TO CHANGE:
+-background pics
+-color palette
+-icons
+-button styles
