@@ -3,3 +3,4 @@ WHAT TO CHANGE:
 -color palette
 -icons
 -button styles
+-the actual content
